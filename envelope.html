@@ -1,0 +1,46 @@
+<!-- envelope.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Seven Days of Love</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="envelope.css"/>
+</head>
+<body>
+  <header>
+    <h1>Seven Days of Love</h1>
+    <p>Click an envelope—one for each day—to open your letter.</p>
+  </header>
+  <main class="grid">
+    <div class="envelope" data-day="1">
+      <div class="flap"></div>
+      <div class="body"></div>
+      <span>Sunday</span>
+    </div>
+    <div class="envelope" data-day="2"><div class="flap"></div><div class="body"></div><span>Monday</span></div>
+    <div class="envelope" data-day="3"><div class="flap"></div><div class="body"></div><span>Tuesday</span></div>
+    <div class="envelope" data-day="4"><div class="flap"></div><div class="body"></div><span>Wednesday</span></div>
+    <div class="envelope" data-day="5"><div class="flap"></div><div class="body"></div><span>Thursday</span></div>
+    <div class="envelope" data-day="6"><div class="flap"></div><div class="body"></div><span>Friday</span></div>
+    <div class="envelope" data-day="7"><div class="flap"></div><div class="body"></div><span>Saturday</span></div>
+  </main>
+
+  <div id="modal" class="modal">
+    <div class="celebrate">
+      <div class="heart-container"></div>
+      <div class="confetti-container"></div>
+    </div>
+    <div class="modal-content">
+      <button class="close">×</button>
+      <div class="letter">
+        <h2 id="modal-title"></h2>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="envelope.js"></script>
+</body>
+</html>
